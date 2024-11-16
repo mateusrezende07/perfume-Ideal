@@ -1,0 +1,75 @@
+body {
+    background: linear-gradient(to bottom, #001f3f, #000000); /* Degradê do azul ao preto */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+}
+
+h1 {
+    color: #ffcc00; /* Cor do nome da loja */
+    margin: 0; /* Remove a margem padrão */
+    font-size: 2em; /* Tamanho da fonte para o nome da loja */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espaçamento entre os itens */
+}
+
+.perfume {
+    width: calc(25% - 20px); /* Quatro imagens por fileira com espaçamento */
+    margin: 10px; /* Margem ao redor de cada perfume */
+    background: #001f3f; /* Fundo azul marinho */
+    border-radius: 8px;
+    overflow: hidden; /* Esconde o excesso de conteúdo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: center; /* Centraliza o texto */
+    transition: transform 0.3s ease; /* Transição suave para movimento */
+    color: white; /* Cor do texto para branco */
+}
+
+.perfume:hover {
+    transform: translateY(-5px); /* Movimenta o cartão para cima ao passar o mouse */
+}
+
+.perfume img {
+    width: 100%; /* Faz a imagem ocupar 100% do espaço disponível */
+    height: 200px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.description {
+    padding: 10px; /* Espaçamento interno do card */
+}
+
+.rating {
+    font-size: 18px; /* Tamanho da fonte da avaliação */
+    margin: 5px 0; /* Margem acima e abaixo da avaliação */
+}
+
+.brand-button {
+    display: inline-block; /* Botão como bloco inline */
+    margin-top: 10px; /* Margem acima do botão */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.brand-button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
